@@ -349,16 +349,16 @@ class Alien:
                 screen, RED, (self.index, 58, self.startStamina*8, 10))
             pygame.draw.rect(
                 screen, BLUE, (self.index, 58, self.stamina*8, 10))
-            fontHealth = pygame.font.Font("ComicNeue-Regular.ttf", 40)
+            fontHealth = pygame.font.Font("Fonts\ComicNeue-Regular.ttf", 40)
             
             # text = fontHealth.render("Health", 1,WHITE)
             # screen.blit(text, (self.index-190, 35))
             # pygame.draw.line(screen, (200, 0, 0), self.position+(32,40)+self.vec, self.position+(32,40)+self.vec+self.vec2, 1)
             # pygame.draw.line(screen, (200, 0, 0), self.position+(32,40)+self.vec+self.vec2*3, self.position+(32,40)+self.vec+self.vec2*4, 1)
 
-            font1 = pygame.font.Font("ComicNeue-Bold.ttf", 23)
-            font2 = pygame.font.Font("ComicNeue-Bold.ttf", 70)
-            font3 = pygame.font.Font("ComicNeue-Bold.ttf", 75)
+            font1 = pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 23)
+            font2 = pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 70)
+            font3 = pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 75)
             
             textP = font1.render(f"{self.id+1}", 1, colors[self.id])
             textP2 = font2.render(f"{self.id+1}", 1, colors[self.id])
@@ -470,7 +470,7 @@ class Alien:
             if self.health <= 0:
                 self.visible = False
                 self.hitbox = (0, 0, 0, 0)
-                font1 = pygame.font.Font("ComicNeue-Bold.ttf", 130)
+                font1 = pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 130)
                 screen.fill(BLACK)
                 text = font1.render(f"Player {(1-self.id)+1} Won!", 1, ORANGE)
                 screen.blit(text, (400, 300))
@@ -989,12 +989,12 @@ while True:
         pygame.draw.rect(screen,BLACK,(670,170,190,60),0,10,10,10,10)
         Mx,My=pygame.mouse.get_pos()
         if (Mx>670 and Mx <860) and (My >170 and My < 230):
-            fontx1= pygame.font.Font("ComicNeue-Bold.ttf", 53)
+            fontx1= pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 53)
 
             textP = fontx1.render(f"  Start ", 1, WHITE)
             Mouse=True
         else:
-            fontx1= pygame.font.Font("ComicNeue-Regular.ttf", 53)
+            fontx1= pygame.font.Font("Fonts\ComicNeue-Regular.ttf", 53)
 
             textP = fontx1.render(f"  Start ", 1, RED)
             Mouse=False
@@ -1074,7 +1074,7 @@ while True:
                     # blocks.append(block11)
                     # blocks.append(block2)
                     # blocks.append(block3)
-                    font = pygame.font.Font("ComicNeue-Bold.ttf", 35)
+                    font = pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 35)
 
 
 
@@ -1083,7 +1083,7 @@ while True:
 
                     fireballs=[]
 
-                    font3 = pygame.font.Font("ComicNeue-Bold.ttf", 50)
+                    font3 = pygame.font.Font("Fonts\ComicNeue-Bold.ttf", 50)
 
 
                     i = 0
